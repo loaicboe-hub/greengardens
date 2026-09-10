@@ -26,8 +26,8 @@ const ADMIN_I18N = {
   ar: {
     flag: ADM_FLAGS.en,
     langBtnText: 'English',
-    docTitle: 'لوحة الإدارة والتحكم | شركة الماسة للتطوير والتصدير الزراعي',
-    brandTitle: 'شركة الماسة للتطوير',
+    docTitle: 'لوحة الإدارة والتحكم | شركة جرين جاردنز للتطوير والتصدير الزراعي',
+    brandTitle: 'شركة جرين جاردنز للتطوير',
     brandSub: 'قطاع التصدير الزراعي والغذائي',
     navOverview: 'نظرة عامة',
     navCategories: 'الأقسام الزراعية',
@@ -36,7 +36,7 @@ const ADMIN_I18N = {
     navInquiries: 'طلبات الأسعار والرسائل',
     navInvoices: 'فواتير التصدير',
     navSettings: 'الإعدادات العامة',
-    headerTitle: 'لوحة تحكم شركة الماسة',
+    headerTitle: 'لوحة تحكم شركة جرين جاردنز',
     headerSub: 'نظام إدارة المحتوى والتصدير وقاعدة بيانات MySQL',
     visitSite: 'زيارة الموقع',
     dbStatus: 'قاعدة البيانات متصلة',
@@ -143,7 +143,7 @@ const ADMIN_I18N = {
     lblStatLabelEn: 'الوصف بالإنجليزية *',
     btnSaveStatItem: 'حفظ الرقم الإحصائي',
 
-    valuesListTitle: 'قيم ومبادئ شركة الماسة',
+    valuesListTitle: 'قيم ومبادئ شركة جرين جاردنز',
     valuesListSub: 'التحكم في المبادئ الستة التي تقود تميز الشركة في التصدير والاستثمار',
     btnAddValue: 'إضافة قيمة جديدة',
     lblValueNum: 'الرقم التسلسلي *',
@@ -165,7 +165,7 @@ const ADMIN_I18N = {
     lblProcessDescEn: 'شرح بروتوكول الجودة والتصدير بالإنجليزية',
     btnSaveFarms: 'حفظ تعديلات المزارع وسلسلة التصدير',
 
-    projectsListTitle: 'المشروعات الكبرى وسابقة الأعمال (ALMASA TRACK RECORD)',
+    projectsListTitle: 'المشروعات الكبرى وسابقة الأعمال (GREEN GARDENS TRACK RECORD)',
     projectsListSub: 'إضافة وتعديل وحذف مشروعات وسلايدات سابقة الأعمال ورفع الصور والتعديل الفوري على الموقع الرئيسي',
     btnAddProject: 'إضافة مشروع / سابقة أعمال',
     thProjectImage: 'صورة المشروع',
@@ -237,7 +237,7 @@ const ADMIN_I18N = {
 
     // Modals
     loginTitle: 'تسجيل دخول الإدارة',
-    loginSub: 'بوابة الإدارة والتصدير لشركة الماسة',
+    loginSub: 'بوابة الإدارة والتصدير لشركة جرين جاردنز',
     lblLoginUsername: 'اسم المستخدم أو البريد الإلكتروني',
     lblLoginPassword: 'كلمة المرور',
     btnLoginSubmit: 'دخول لوحة التحكم',
@@ -364,8 +364,8 @@ const ADMIN_I18N = {
   en: {
     flag: ADM_FLAGS.ar,
     langBtnText: 'العربية',
-    docTitle: 'Admin & Control Panel | ALMASA Development & Agro-Export',
-    brandTitle: 'ALMASA Development',
+    docTitle: 'Admin & Control Panel | Green Gardens Development & Agro-Export',
+    brandTitle: 'Green Gardens Development',
     brandSub: 'Agro-Export & Food Division',
     navOverview: 'Overview',
     navCategories: 'Agro Categories',
@@ -374,7 +374,7 @@ const ADMIN_I18N = {
     navInquiries: 'RFQs & Inquiries',
     navInvoices: 'Export Invoices',
     navSettings: 'General Settings',
-    headerTitle: 'ALMASA Control Panel',
+    headerTitle: 'Green Gardens Control Panel',
     headerSub: 'Agro-Export Content Management System & MySQL Database',
     visitSite: 'Visit Website',
     dbStatus: 'Database Online',
@@ -477,7 +477,7 @@ const ADMIN_I18N = {
     btnSaveStatItem: 'Save Milestone',
 
     valuesListTitle: 'Corporate Core Values & Principles',
-    valuesListSub: 'Manage the core principles driving ALMASA export excellence and integrity',
+    valuesListSub: 'Manage the core principles driving Green Gardens export excellence and integrity',
     btnAddValue: 'Add New Principle',
     lblValueNum: 'Sequence Number *',
     lblValueTitleAr: 'Principle Title (Arabic) *',
@@ -498,7 +498,7 @@ const ADMIN_I18N = {
     lblProcessDescEn: 'Export Protocol Description (English)',
     btnSaveFarms: 'Save Farms & Export Chain Changes',
 
-    projectsListTitle: 'Mega Projects & ALMASA Track Record',
+    projectsListTitle: 'Mega Projects & Green Gardens Track Record',
     projectsListSub: 'Add, edit, delete projects and slide showcases, upload photos and update public landing page in real-time',
     btnAddProject: 'Add Track Record Project',
     thProjectImage: 'Project Slide / Photo',
@@ -570,7 +570,7 @@ const ADMIN_I18N = {
 
     // Modals
     loginTitle: 'Admin Portal Login',
-    loginSub: 'ALMASA Agro-Export & Administration System',
+    loginSub: 'Green Gardens Agro-Export & Administration System',
     lblLoginUsername: 'Username or Email Address',
     lblLoginPassword: 'Password',
     btnLoginSubmit: 'Sign In to Dashboard',
@@ -667,7 +667,7 @@ const ADMIN_I18N = {
     btnIssueInvoice: 'Issue & Save Invoice',
 
     // Toasts & Alerts
-    toastLoginSuccess: 'Login successful! Welcome to ALMASA Control Panel.',
+    toastLoginSuccess: 'Login successful! Welcome to Green Gardens Control Panel.',
     toastLogoutSuccess: 'Logged out successfully.',
     toastLoginError: 'Invalid username or password.',
     toastSaveSuccess: 'Settings and data saved successfully!',
@@ -1780,7 +1780,7 @@ async function loadContentData() {
       valuesItemsCache = c.values || [];
       renderValuesItems();
 
-      // Projects (ALMASA Track Record)
+      // Projects (Green Gardens Track Record)
       if (c.projects && Array.isArray(c.projects)) {
         projectsCache = c.projects;
         renderProjectsTable();
@@ -2282,7 +2282,7 @@ window.deleteValueItem = async function(id) {
 };
 
 // -----------------------------------------------------------------------------
-// ALMASA Track Record & Projects CRUD
+// Green Gardens Track Record & Projects CRUD
 // -----------------------------------------------------------------------------
 async function loadProjects() {
   const tbody = document.getElementById('projectsTableBody');
@@ -3257,7 +3257,7 @@ window.printInvoice = function(invRef, client, amount, currency) {
   <div class="action-bar no-print">
     <div style="color: #f59e0b; font-weight: 800; display: flex; align-items: center; gap: 8px;">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-      <span>${isEn ? 'ALMASA Official Export Invoice' : 'فاتورة تصدير شركة الماسة الرسمية'}</span>
+      <span>${isEn ? 'Green Gardens Official Export Invoice' : 'فاتورة تصدير شركة جرين جاردنز الرسمية'}</span>
     </div>
     <div style="display: flex; gap: 10px;">
       <button class="action-btn btn-download" onclick="window.print()">
@@ -3274,17 +3274,17 @@ window.printInvoice = function(invRef, client, amount, currency) {
 
   <!-- Printable Invoice Sheet -->
   <div class="invoice-sheet" id="invoiceSheet">
-    <div class="watermark">ALMASA EXPORT</div>
+    <div class="watermark">GREEN GARDENS EXPORT</div>
 
     <!-- Header -->
     <div class="inv-header">
       <div class="brand-block">
-        <img src="/assets/images/logo.png" alt="ALMASA Logo" class="brand-logo">
+        <img src="/assets/images/logo.png" alt="Green Gardens Logo" class="brand-logo">
         <div class="brand-text">
-          <h1>${isEn ? 'ALMASA Development & Agro-Export Co.' : 'شركة الماسة للتطوير والتصدير الزراعي والغذائي'}</h1>
+          <h1>${isEn ? 'Green Gardens Development & Agro-Export Co.' : 'شركة جرين جاردنز للتطوير والتصدير الزراعي والغذائي'}</h1>
           <h2>${isEn ? 'Global Produce & Agro-Export Division' : 'قطاع التصدير الزراعي والتوريد الدولي'}</h2>
           <p>The Courtyard Mall, Zayed, Giza & Abu El Matameer, Beheira, Egypt</p>
-          <p style="font-size:0.75rem; color:#b45309; font-weight:600;">Tel / WA: +20 106 886 8780 | Email: info@almasagroup-eg.com | Web: www.almasapremium.com</p>
+          <p style="font-size:0.75rem; color:#b45309; font-weight:600;">Tel / WA: +20 106 886 8780 | Email: info@greengardens-eg.com | Web: www.greengardens-eg.com</p>
         </div>
       </div>
 
@@ -3304,7 +3304,7 @@ window.printInvoice = function(invRef, client, amount, currency) {
           <span>🏢</span>
           <span>${isEn ? 'Shipper / Exporter' : 'المصدر / الشاحن'}</span>
         </div>
-        <div class="party-name">${isEn ? 'ALMASA Development & Agro-Export Co.' : 'شركة الماسة للتطوير والتصدير الزراعي والغذائي'}</div>
+        <div class="party-name">${isEn ? 'Green Gardens Development & Agro-Export Co.' : 'شركة جرين جاردنز للتطوير والتصدير الزراعي والغذائي'}</div>
         <div class="party-detail">
           <div><strong>${isEn ? 'Commercial Reg.' : 'سجل تجاري'}:</strong> 184592 (Giza Chamber)</div>
           <div><strong>${isEn ? 'Tax ID' : 'بطاقة ضريبية'}:</strong> 624-918-305 | <strong>${isEn ? 'Export Lic.' : 'رخصة تصدير'}:</strong> 9402</div>
@@ -3345,7 +3345,7 @@ window.printInvoice = function(invRef, client, amount, currency) {
               <td>${idx + 1}</td>
               <td>
                 <div class="item-desc">${item.name}</div>
-                <div class="item-sub">${isEn ? 'Origin: Egypt (ALMASA Farms) • Global GAP Certified' : 'المنشأ: مصر (مزارع شركة الماسة) • معتمدة للمواصفات القياسية'}</div>
+                <div class="item-sub">${isEn ? 'Origin: Egypt (Green Gardens Farms) • Global GAP Certified' : 'المنشأ: مصر (مزارع شركة جرين جاردنز) • معتمدة للمواصفات القياسية'}</div>
               </td>
               <td><span style="font-size:0.82rem; color:#475569;">${item.packaging || (isEn ? 'Standard Export Master Carton' : 'كرتون تصدير قياسي')}</span></td>
               <td><strong>${item.quantity || '1 Consignment'}</strong></td>
@@ -3385,7 +3385,7 @@ window.printInvoice = function(invRef, client, amount, currency) {
     <div class="wire-box">
       <div>
         <div class="wire-title">${isEn ? 'Official Bank Wire Transfer Instructions (SWIFT / TT)' : 'بيانات التحويل المصرفي المعتمد للشركة (SWIFT / TT)'}</div>
-        <div style="font-size:0.78rem; color:#166534;"><strong>${isEn ? 'Beneficiary' : 'اسم المستفيد'}:</strong> ALMASA Development & Agro-Export Co.</div>
+        <div style="font-size:0.78rem; color:#166534;"><strong>${isEn ? 'Beneficiary' : 'اسم المستفيد'}:</strong> Green Gardens Development & Agro-Export Co.</div>
       </div>
       <div class="wire-details">
         <div><strong>Bank:</strong> National Bank of Egypt (NBE)</div>
@@ -3416,8 +3416,8 @@ window.printInvoice = function(invRef, client, amount, currency) {
     <!-- Bottom Footer Note -->
     <div class="inv-footer-note">
       ${isEn 
-        ? 'ALMASA Development & Agro-Export Co. • Commercial Registration No. 184592 • Headquarters: Giza & Beheira, Egypt' 
-        : 'شركة الماسة للتطوير والتصدير الزراعي والغذائي • سجل تجاري 184592 • المقر الرئيسي: الجيزة والبحيرة، جمهورية مصر العربية'}
+        ? 'Green Gardens Development & Agro-Export Co. • Commercial Registration No. 184592 • Headquarters: Giza & Beheira, Egypt' 
+        : 'شركة جرين جاردنز للتطوير والتصدير الزراعي والغذائي • سجل تجاري 184592 • المقر الرئيسي: الجيزة والبحيرة، جمهورية مصر العربية'}
     </div>
   </div>
 

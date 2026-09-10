@@ -1504,11 +1504,11 @@ let mockProducts = [
 let mockInvoices = [];
 let mockNews = [];
 let mockSettings = {
-  company_name_ar: "شركة الماسة للتطوير والتصدير الزراعي والغذائي",
-  company_name_en: "ALMASA Development & Agro-Export Co.",
+  company_name_ar: "شركة جرين جاردنز للتطوير والتصدير الزراعي والغذائي",
+  company_name_en: "Green Gardens Development & Agro-Export Co.",
   company_phone: "+20 100 000 0000",
   company_whatsapp: "+20 100 000 0000",
-  company_email: "info@almasagroup-eg.com",
+  company_email: "info@greengardens-eg.com",
   company_address_ar: "جمهورية مصر العربية - مزارع وادي النطرون والبستان",
   company_address_en: "Egypt - Wadi El-Natrun & Bustan Agro Farms",
   facebook_url: "https://facebook.com",
@@ -1759,7 +1759,7 @@ app.post('/api/auth/login', async (req, res) => {
     // Default Dev Admin Login Fallback
     if (username === 'admin' && (password === 'admin123' || password === 'admin123#Almasa')) {
       const token = jwt.sign(
-        { id: 1, username: 'admin', role: 'super_admin', fullName: 'Almasa Master Executive' },
+        { id: 1, username: 'admin', role: 'super_admin', fullName: 'Green Gardens Master Executive' },
         JWT_SECRET,
         { expiresIn: '7d' }
       );
@@ -1767,7 +1767,7 @@ app.post('/api/auth/login', async (req, res) => {
         success: true,
         message: 'تم تسجيل الدخول بنجاح (المشرف العام)',
         token,
-        user: { username: 'admin', role: 'super_admin', fullName: 'Almasa Master Executive' }
+        user: { username: 'admin', role: 'super_admin', fullName: 'Green Gardens Master Executive' }
       });
     }
 
@@ -2142,7 +2142,7 @@ app.post('/api/inquiries', async (req, res) => {
       );
       return res.json({
         success: true,
-        message: 'تم استلام طلبكم بنجاح! سيتواصل معكم مسؤولو قطاع التصدير بشركة الماسة خلال ساعات معدودة.',
+        message: 'تم استلام طلبكم بنجاح! سيتواصل معكم مسؤولو قطاع التصدير بشركة جرين جاردنز خلال ساعات معدودة.',
         id: result.insertId
       });
     }
@@ -2167,7 +2167,7 @@ app.post('/api/inquiries', async (req, res) => {
 
     res.json({
       success: true,
-      message: 'تم استلام طلبكم بنجاح! سيتواصل معكم مسؤولو قطاع التصدير بشركة الماسة في أقرب وقت.',
+      message: 'تم استلام طلبكم بنجاح! سيتواصل معكم مسؤولو قطاع التصدير بشركة جرين جاردنز في أقرب وقت.',
       data: inquiry
     });
   } catch (err) {
@@ -2455,8 +2455,8 @@ let mockWebContent = {
   about: {
     subtitle_ar: "مسيرة 20 عاماً من الثقة",
     subtitle_en: "20 Years of Proven Trust",
-    title_ar: "نبذة عن شركة الماسة للتطوير والتصدير الزراعي",
-    title_en: "About ALMASA Development & Agro-Export Co.",
+    title_ar: "نبذة عن شركة جرين جاردنز للتطوير والتصدير الزراعي",
+    title_en: "About Green Gardens Development & Agro-Export Co.",
     desc_ar: "تاريخ عريق من الخبرة والتميز في المشروعات التخصصية والاستثمارية، نتوسع اليوم بثقة لتقديم أجود الحاصلات الزراعية والغذائية المصرية لأسواق العالم.",
     desc_en: "A long legacy of excellence in specialized projects and sustainable agro-investments, expanding to supply global markets with premier Egyptian produce.",
     vision_title_ar: "رؤيتنا",
@@ -2469,12 +2469,12 @@ let mockWebContent = {
     mission_text_en: "To deliver professional operations combining operational flexibility with uncompromising food safety and premium quality across global supply chains.",
     msg_title_ar: "كلمة الإدارة",
     msg_title_en: "Management Message",
-    msg_text_ar: "نؤمن في شركة الماسة للتطوير بأن النجاح الحقيقي يبدأ من وضوح الرؤية وجودة التنفيذ، لذلك نعمل على بناء أعمال قوية وشراكات طويلة المدى تستند إلى الثقة والاحترافية والالتزام بأعلى المعايير العالمية.",
-    msg_text_en: "At ALMASA, we believe real success starts with clear vision and uncompromising execution, building lasting international partnerships grounded in trust and world-class standards.",
-    sign_ar: "إدارة شركة الماسة للتطوير",
-    sign_en: "ALMASA Executive Board",
-    sign_role_ar: "المجلس التنفيذي لشركة الماسة",
-    sign_role_en: "Executive Board of ALMASA",
+    msg_text_ar: "نؤمن في شركة جرين جاردنز للتطوير بأن النجاح الحقيقي يبدأ من وضوح الرؤية وجودة التنفيذ، لذلك نعمل على بناء أعمال قوية وشراكات طويلة المدى تستند إلى الثقة والاحترافية والالتزام بأعلى المعايير العالمية.",
+    msg_text_en: "At Green Gardens, we believe real success starts with clear vision and uncompromising execution, building lasting international partnerships grounded in trust and world-class standards.",
+    sign_ar: "إدارة شركة جرين جاردنز للتطوير",
+    sign_en: "Green Gardens Executive Board",
+    sign_role_ar: "المجلس التنفيذي لشركة جرين جاردنز",
+    sign_role_en: "Executive Board of Green Gardens",
     image_url: "assets/images/hero.jpg"
   },
   farms: {
@@ -2486,8 +2486,8 @@ let mockWebContent = {
     desc_en: "Agricultural investments grounded in sustainable production and modern infrastructure across model farms equipped with advanced center-pivot networks.",
     hero_title_ar: "مزارع نموذجية تدار بأحدث تقنيات الري الذكي",
     hero_title_en: "Model Farms Powered by Smart Irrigation",
-    hero_desc_ar: "تمتلك شركة الماسة 3 مزارع كبرى مجهزة بنظم ري محوري حديث في وادي النطرون والبستان، تضمن أعلى إنتاجية وتتبع دقيق للمحصول.",
-    hero_desc_en: "ALMASA operates 3 major farms in Wadi El-Natrun and Bustan equipped with state-of-the-art center-pivot irrigation ensuring maximum yield and complete traceability.",
+    hero_desc_ar: "تمتلك شركة جرين جاردنز 3 مزارع كبرى مجهزة بنظم ري محوري حديث في وادي النطرون والبستان، تضمن أعلى إنتاجية وتتبع دقيق للمحصول.",
+    hero_desc_en: "Green Gardens operates 3 major farms in Wadi El-Natrun and Bustan equipped with state-of-the-art center-pivot irrigation ensuring maximum yield and complete traceability.",
     image_url: "assets/images/oranges.jpg"
   },
   process: {
@@ -2522,8 +2522,8 @@ let mockBoardMembers = [
     name_en: "Mrs. Eman Mohamed El-Jedawy",
     role_ar: "رئيس مجلس الإدارة",
     role_en: "Chairwoman of the Board",
-    bio_ar: "قيادة الرؤية الاستراتيجية الشاملة لشركة الماسة والتوسع في القطاعات التنموية والاستثمارية المستدامة.",
-    bio_en: "Leading the overall strategic vision of ALMASA and expanding into sustainable agro-development.",
+    bio_ar: "قيادة الرؤية الاستراتيجية الشاملة لشركة جرين جاردنز والتوسع في القطاعات التنموية والاستثمارية المستدامة.",
+    bio_en: "Leading the overall strategic vision of Green Gardens and expanding into sustainable agro-development.",
     image_url: "assets/images/logo_diamond.png",
     sort_order: 1
   },
@@ -2589,7 +2589,7 @@ let mockBoardMembers = [
     role_ar: "مدير قطاع التسويق",
     role_en: "Marketing Sector Director",
     bio_ar: "بناء الهوية المؤسسية الدولية، الحملات التسويقية لعلامة الماسة، والمشاركة في المعارض الغذائية العالمية.",
-    bio_en: "Driving global brand equity for ALMASA, trade missions, and international agro-food expos (Gulfood, Fruit Logistica).",
+    bio_en: "Driving global brand equity for Green Gardens, trade missions, and international agro-food expos (Gulfood, Fruit Logistica).",
     image_url: "assets/images/board/mohamed_fathy_ayyad.jpg",
     sort_order: 7
   },
@@ -2896,7 +2896,7 @@ function syncProductsToContentJs(productsList) {
         sandbox.ALMASA_DATA[lang].products = syncedList;
       });
 
-      const newContentStr = `// Trilingual & Quadrilingual Data Repository for ALMASA Development & Agro-Export\nvar ALMASA_DATA = ${JSON.stringify(sandbox.ALMASA_DATA, null, 2)};\n`;
+      const newContentStr = `// Trilingual & Quadrilingual Data Repository for Green Gardens Development & Agro-Export\nvar ALMASA_DATA = ${JSON.stringify(sandbox.ALMASA_DATA, null, 2)};\n`;
       fs.writeFileSync(contentJsPath, newContentStr, 'utf8');
       console.log('✅ [Sync] Successfully synced products & multi-images to assets/data/content.js');
     }
@@ -2906,7 +2906,7 @@ function syncProductsToContentJs(productsList) {
 }
 
 // -----------------------------------------------------------------------------
-// 12. ALMASA Track Record / Projects Management API
+// 12. Green Gardens Track Record / Projects Management API
 // -----------------------------------------------------------------------------
 function syncProjectsToContentJs(projectsList) {
   try {
@@ -2946,7 +2946,7 @@ function syncProjectsToContentJs(projectsList) {
       if (sandbox.ALMASA_DATA.en) sandbox.ALMASA_DATA.en.projects = enProjects;
       if (sandbox.ALMASA_DATA.fr) sandbox.ALMASA_DATA.fr.projects = frProjects;
 
-      const newContentStr = `// Trilingual Data Repository for ALMASA Development & Agro-Export\nvar ALMASA_DATA = ${JSON.stringify(sandbox.ALMASA_DATA, null, 2)};\n`;
+      const newContentStr = `// Trilingual Data Repository for Green Gardens Development & Agro-Export\nvar ALMASA_DATA = ${JSON.stringify(sandbox.ALMASA_DATA, null, 2)};\n`;
       fs.writeFileSync(contentJsPath, newContentStr, 'utf8');
       console.log('✅ [Sync] Successfully synced projects to assets/data/content.js');
     }
@@ -3133,7 +3133,7 @@ app.get('/', (req, res) => {
 if (require.main === module) {
   app.listen(PORT, async () => {
     console.log(`✨ =======================================================`);
-    console.log(`✨ ALMASA Agro-Export Platform Server Running on Port ${PORT}`);
+    console.log(`✨ Green Gardens Agro-Export Platform Server Running on Port ${PORT}`);
     console.log(`🌐 Public Website: http://localhost:${PORT}`);
     console.log(`💎 Admin Dashboard: http://localhost:${PORT}/admin`);
     console.log(`✨ =======================================================`);
