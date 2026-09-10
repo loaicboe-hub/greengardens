@@ -1,14 +1,14 @@
 -- ==============================================================================
--- ALMASA Development & Agro-Export (شركة الماسة للتطوير والتصدير الزراعي)
+-- Green Gardens Development & Agro-Export (جرين جاردنز للتطوير والتصدير الزراعي)
 -- MySQL Database Schema - Production Ready for Hostinger & Local Server
 -- Collation: utf8mb4_unicode_ci (Supports Full Arabic & English Text & Emojis)
 -- ==============================================================================
 
-CREATE DATABASE IF NOT EXISTS `almasa_db` 
+CREATE DATABASE IF NOT EXISTS `greengardens_db` 
   CHARACTER SET utf8mb4 
   COLLATE utf8mb4_unicode_ci;
 
-USE `almasa_db`;
+USE `greengardens_db`;
 
 -- ------------------------------------------------------------------------------
 -- 1. Admins & Users Table (حسابات المشرفين والمديرين)

@@ -1,20 +1,20 @@
 {
-  "name": "almasa-agro-export",
+  "name": "greengardens-agro-export",
   "version": "2.0.0",
-  "description": "ALMASA Development & Agro-Export Web Platform with MySQL Backend & Admin Panel",
+  "description": "Green Gardens Development & Agro-Export Web Platform with MySQL Backend & Admin Panel",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
   },
   "keywords": [
-    "almasa",
+    "greengardens",
     "agro-export",
     "mysql",
     "express",
     "egypt-export"
   ],
-  "author": "ALMASA Dev Team",
+  "author": "Green Gardens Dev Team",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^3.0.3",

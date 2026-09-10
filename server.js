@@ -11,7 +11,7 @@ const { initDb, query, isDbConnected } = require('./db');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const JWT_SECRET = process.env.JWT_SECRET || 'almasa_luxury_secret_jwt_2026';
+const JWT_SECRET = process.env.JWT_SECRET || 'greengardens_luxury_secret_jwt_2026';
 
 // Middleware
 app.use(cors());
@@ -33,7 +33,7 @@ const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, uploadDir),
   filename: (req, file, cb) => {
     const ext = path.extname(file.originalname);
-    const uniqueName = `almasa_${Date.now()}_${Math.round(Math.random() * 1e6)}${ext}`;
+    const uniqueName = `greengardens_${Date.now()}_${Math.round(Math.random() * 1e6)}${ext}`;
     cb(null, uniqueName);
   }
 });
