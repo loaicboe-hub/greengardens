@@ -183,9 +183,9 @@ CREATE TABLE IF NOT EXISTS `content_sections` (
 -- Initial Seed Data (البيانات الابتدائية والتجريبية)
 -- ==============================================================================
 
--- 1. Default Super Admin (Username: admin, Password: admin123#Almasa)
+-- 1. Default Super Admin (Username: admin, Password: admin123#GreenGardens)
 INSERT INTO `admins` (`username`, `email`, `password_hash`, `full_name`, `role`)
-VALUES ('admin', 'admin@almasagroup-eg.com', '$2a$10$wN10gBfUqj9aLlhDkJvGZegBffjM/nQ9oV9z8y9e9tKkWwWzZqTWW', 'Almasa Executive Admin', 'super_admin')
+VALUES ('admin', 'admin@greengardens-eg.com', '$2a$10$wN10gBfUqj9aLlhDkJvGZegBffjM/nQ9oV9z8y9e9tKkWwWzZqTWW', 'Green Gardens Executive Admin', 'super_admin')
 ON DUPLICATE KEY UPDATE `username` = `username`;
 
 -- 2. Seed Categories
@@ -212,9 +212,9 @@ ON DUPLICATE KEY UPDATE `name_ar` = VALUES(`name_ar`), `name_en` = VALUES(`name_
 
 -- 4. Initial Site Settings
 INSERT INTO `site_settings` (`setting_key`, `setting_value`, `group_name`) VALUES
-('site_title_ar', 'شركة الماسة للتطوير والتصدير الزراعي والغذائي', 'general'),
-('site_title_en', 'ALMASA Development & Agro-Export Co.', 'general'),
-('company_email', 'info@almasagroup-eg.com', 'contact'),
+('site_title_ar', 'شركة جرين جاردنز للتطوير والتصدير الزراعي والغذائي', 'general'),
+('site_title_en', 'Green Gardens Development & Agro-Export Co.', 'general'),
+('company_email', 'info@greengardens-eg.com', 'contact'),
 ('company_phone', '+20 100 000 0000', 'contact'),
 ('company_whatsapp', '+20 100 000 0000', 'contact'),
 ('company_address_ar', 'جمهورية مصر العربية - مزارع وادي النطرون والبستان', 'contact'),
@@ -223,13 +223,13 @@ ON DUPLICATE KEY UPDATE `setting_key` = `setting_key`;
 
 -- 5. Seed Board Members
 INSERT INTO `board_members` (`id`, `name_ar`, `name_en`, `role_ar`, `role_en`, `bio_ar`, `bio_en`, `image_url`, `sort_order`) VALUES
-(1, 'السيدة / إيمان محمد الجداوي', 'Mrs. Eman Mohamed El-Jedawy', 'رئيس مجلس الإدارة', 'Chairwoman of the Board', 'قيادة الرؤية الاستراتيجية الشاملة لشركة الماسة والتوسع في القطاعات التنموية والاستثمارية المستدامة.', 'Leading the overall strategic vision of ALMASA and expanding into sustainable agro-development.', 'assets/images/logo.png', 1),
+(1, 'السيدة / إيمان محمد الجداوي', 'Mrs. Eman Mohamed El-Jedawy', 'رئيس مجلس الإدارة', 'Chairwoman of the Board', 'قيادة الرؤية الاستراتيجية الشاملة لشركة جرين جاردنز والتوسع في القطاعات التنموية والاستثمارية المستدامة.', 'Leading the overall strategic vision of Green Gardens and expanding into sustainable agro-development.', 'assets/images/logo.png', 1),
 (2, 'المهندس / عبده محمد عياد', 'Eng. Abdo Mohamed Ayyad', 'نائب رئيس مجلس الإدارة والعضو المنتدب', 'Vice Chairman & Managing Director', 'الإشراف التنفيذي الكامل على الخطط التشغيلية وتوسعات قطاع التصدير الزراعي والغذائي والمشروعات الكبرى.', 'Executive oversight on operational plans and major agro-export expansions.', 'assets/images/board/abdo_mohamed_ayyad.jpg', 2),
 (3, 'المستشار الدكتور / سمير بن محمد بن الخطيب', 'Dr. Samir Mohamed El-Khatib', 'عضو مجلس الإدارة', 'Board Member', 'تطوير الشراكات الاستثمارية والتوجهات الاستراتيجية للتوسع في الأسواق الخليجية والدولية.', 'Developing strategic investment partnerships and expanding into Gulf and international markets.', 'assets/images/board/samir_el_khatib.jpg', 3),
 (4, 'الدكتورة / ريماس عبده عياد', 'Dr. Remas Abdo Ayyad', 'عضوة مجلس الإدارة', 'Board Member', 'المساهمة في التخطيط الاستراتيجي وبرامج الجودة والتطوير المؤسسي المستمر.', 'Contributing to strategic planning, quality frameworks, and continuous development.', 'assets/images/logo.png', 4),
 (5, 'الأستاذ / عماد سعد محمد', 'Mr. Emad Saad Mohamed', 'مدير ومراجع القطاع المالي', 'CFO & Financial Auditor', 'إدارة الحوكمة المالية، المراجعة المحاسبية، وتأمين التمويل والاعتمادات المستندية للتصدير الدولي.', 'Managing financial governance, auditing, and export letters of credit.', 'assets/images/board/emad_saad_mohamed.jpg', 5),
 (6, 'المهندس / أحمد حسن عبدالعزيز', 'Eng. Ahmed Hassan Abdelaziz', 'مدير القطاع التجاري', 'Commercial Director', 'إدارة العقود التجارية الدولية، التسعير التنافسي، وفتح قنوات التوزيع العالمية.', 'Managing international trade contracts, competitive pricing, and global sales channels.', 'assets/images/board/ahmed_hassan_abdelaziz.jpg', 6),
-(7, 'المهندس / محمد فتحي عياد', 'Eng. Mohamed Fathy Ayyad', 'مدير قطاع التسويق', 'Marketing Director', 'بناء الهوية المؤسسية الدولية، الحملات التسويقية لعلامة الماسة، والمشاركة في المعارض الغذائية العالمية.', 'Building international brand identity and managing global food exhibition participation.', 'assets/images/board/mohamed_fathy_ayyad.jpg', 7),
+(7, 'المهندس / محمد فتحي عياد', 'Eng. Mohamed Fathy Ayyad', 'مدير قطاع التسويق', 'Marketing Director', 'بناء الهوية المؤسسية الدولية، الحملات التسويقية لعلامة جرين جاردنز، والمشاركة في المعارض الغذائية العالمية.', 'Building international brand identity and managing global food exhibition participation.', 'assets/images/board/mohamed_fathy_ayyad.jpg', 7),
 (8, 'الدكتور / أحمد محمد فايد', 'Dr. Ahmed Mohamed Fayed', 'مدير القطاع القانوني', 'Chief Legal Officer', 'صياغة ومراجعة العقود الدولية والاتفاقيات التجارية وضمان الامتثال للوائح التجارة العالمية.', 'Drafting international trade contracts and ensuring full regulatory compliance.', 'assets/images/board/ahmed_mohamed_fayed.jpg', 8),
 (9, 'المستشار / صبري إبراهيم السيد', 'Mr. Sabry Ibrahim El-Sayed', 'مدير العلاقات الخارجية والتصدير', 'External Relations & Export Director', 'التنسيق التجاري مع البعثات التجارية ومتابعة تسهيلات الشحن والجمارك للتصدير.', 'Coordinating with trade missions and managing customs and international logistics.', 'assets/images/board/sabry_ibrahim_elsayed.jpg', 9),
 (10, 'اللواء / شريف أنور زغلول', 'Gen. Sherif Anwar Zaghloul', 'مدير القطاع الأمني', 'Security & Facilities Director', 'تأمين سلاسل الإمداد ومواقع المزارع والمحطات وتطبيق بروتوكولات السلامة والحماية الشاملة.', 'Securing supply chains, farms, and facilities with comprehensive safety protocols.', 'assets/images/board/sherif_anwar_zaghloul.jpg', 10)
