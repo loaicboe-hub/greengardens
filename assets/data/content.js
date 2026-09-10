@@ -6854,18 +6854,27 @@ var ALMASA_DATA = {
     ],
     "contacts": {
       "branch1": {
-        "title": "Головной офис управления проектами (Каир)",
-        "address": "Аббасия — башня Миср для туризма, 9-й этаж, Каир, Египет",
-        "phone": "+20 100 234 5678",
-        "phoneClean": "+201002345678"
+        "title": "Главный офис (Гиза)",
+        "address": "Гиза — Город Шейх Заид — Торговый центр The Courtyard",
+        "phone": "01068868780",
+        "phoneClean": "+201068868780"
       },
       "branch2": {
-        "title": "Департамент агроэкспорта и упаковочные комплексы",
-        "address": "Трасса Каир-Александрия (км 84) — Вади-эль-Натрун, провинция Бухейра, Египет",
-        "phone": "+20 111 987 6543",
-        "phoneClean": "+201119876543"
+        "title": "Операционный и агроэкспортный центр (Бухейра)",
+        "address": "Провинция Бухейра — Абу-эль-Матамир — Рядом с инфекционной больницей",
+        "phone": "+201222309944",
+        "phoneClean": "+201222309944"
       },
-      "whatsappNumber": "+201002345678"
+      "emails": [
+        "gm@greengardens-eg.com",
+        "export@greengardens-eg.com",
+        "info@greengardens-eg.com"
+      ],
+      "websites": [
+        "www.greengardens-eg.com",
+        "www.greengardens-eg.com"
+      ],
+      "whatsappNumber": "+201222309944"
     }
   }
 };

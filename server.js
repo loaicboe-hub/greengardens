@@ -1506,8 +1506,8 @@ let mockNews = [];
 let mockSettings = {
   company_name_ar: "شركة جرين جاردنز للتطوير والتصدير الزراعي والغذائي",
   company_name_en: "Green Gardens Development & Agro-Export Co.",
-  company_phone: "+20 100 000 0000",
-  company_whatsapp: "+20 100 000 0000",
+  company_phone: "+201222309944",
+  company_whatsapp: "+201222309944",
   company_email: "info@greengardens-eg.com",
   company_address_ar: "جمهورية مصر العربية - مزارع وادي النطرون والبستان",
   company_address_en: "Egypt - Wadi El-Natrun & Bustan Agro Farms",
