@@ -515,8 +515,8 @@ button, input, select, textarea {
 }
 
 .logo-img-wrapper {
-  width: clamp(52px, 4.5vw, 68px);
-  height: clamp(52px, 4.5vw, 68px);
+  width: clamp(84px, 7vw, 108px);
+  height: clamp(84px, 7vw, 108px);
   border-radius: 0;
   padding: 0;
   background: transparent !important;
@@ -532,8 +532,8 @@ button, input, select, textarea {
 }
 
 .site-header.scrolled .logo-img-wrapper {
-  width: clamp(42px, 3.5vw, 52px);
-  height: clamp(42px, 3.5vw, 52px);
+  width: clamp(68px, 5.5vw, 84px);
+  height: clamp(68px, 5.5vw, 84px);
 }
 
 .logo-img-wrapper img {
@@ -1355,15 +1355,15 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .section-brand-badge img {
-  width: clamp(58px, 5.5vw, 75px);
-  height: clamp(58px, 5.5vw, 75px);
+  width: clamp(92px, 8.8vw, 120px);
+  height: clamp(92px, 8.8vw, 120px);
   object-fit: contain;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 0 !important;
-  filter: drop-shadow(0 6px 18px rgba(212, 175, 55, 0.45));
+  filter: drop-shadow(0 6px 20px rgba(212, 175, 55, 0.45));
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
 }
 
@@ -2693,8 +2693,8 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .footer-brand .logo-img-wrapper {
-  width: 98px;
-  height: 98px;
+  width: 156px;
+  height: 156px;
   border-radius: 0;
   padding: 0;
   background: transparent !important;
@@ -3255,7 +3255,7 @@ html, body {
     padding: 0.3rem 0.35rem;
   }
   .logo-img-wrapper {
-    width: 56px !important; height: 56px !important;
+    width: 88px !important; height: 88px !important;
   }
   .brand-title {
     font-size: 1.18rem !important;
@@ -3279,7 +3279,7 @@ html, body {
     padding: 0.25rem 0.3rem;
   }
   html[lang="ru"] .logo-img-wrapper {
-    width: 52px !important; height: 52px !important;
+    width: 82px !important; height: 82px !important;
   }
   html[lang="ru"] .brand-title {
     font-size: 1.02rem !important;
@@ -3653,7 +3653,7 @@ html, body {
   html[lang="en"] .logo-img-wrapper,
   html[lang="fr"] .logo-img-wrapper,
   html[dir="rtl"] .logo-img-wrapper {
-    width: 48px !important; height: 48px !important;
+    width: 76px !important; height: 76px !important;
   }
 
   html[lang="ar"] .brand-title,
@@ -3697,7 +3697,7 @@ html, body {
     left: -4px;
   }
 
-  /* Splash Intro on Mobile */
+  /* Splash Intro on Mobile (Kept untouched) */
   .splash-skip-btn {
     top: calc(1rem + env(safe-area-inset-top, 0px));
     right: 1rem;
@@ -3737,8 +3737,8 @@ html, body {
   }
 
   .section-brand-badge img {
-    width: clamp(50px, 8vw, 62px);
-    height: clamp(50px, 8vw, 62px);
+    width: clamp(80px, 12vw, 98px);
+    height: clamp(80px, 12vw, 98px);
   }
 
   .section-brand-badge span {
