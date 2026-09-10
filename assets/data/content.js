@@ -1666,17 +1666,17 @@ var ALMASA_DATA = {
       "branch2": {
         "title": "فرع العمليات والمزارع (البحيرة)",
         "address": "محافظة البحيرة - أبو المطامير - بجوار مستشفى الحميات",
-        "phone": "01090043999",
-        "phoneClean": "+201090043999"
+        "phone": "01222309944",
+        "phoneClean": "+201222309944"
       },
       "emails": [
-        "gm-abdou@almasapremium.com",
-        "ceo-remas@almasapremium.com",
-        "almasa-premium@gmail.com"
+        "gm@greengardens-eg.com",
+        "export@greengardens-eg.com",
+        "info@greengardens-eg.com"
       ],
       "websites": [
-        "www.almasa-premium.com",
-        "www.almasadevelopment.com"
+        "www.greengardens-eg.com",
+        "www.greengardens-eg.com"
       ],
       "whatsappNumber": "+201068868780"
     }
@@ -3347,17 +3347,17 @@ var ALMASA_DATA = {
       "branch2": {
         "title": "Operations & Farm Hub (Beheira)",
         "address": "Beheira Governorate - Abu El Matameer - Beside Fevers Hospital",
-        "phone": "01090043999",
-        "phoneClean": "+201090043999"
+        "phone": "01222309944",
+        "phoneClean": "+201222309944"
       },
       "emails": [
-        "gm-abdou@almasapremium.com",
-        "ceo-remas@almasapremium.com",
-        "almasa-premium@gmail.com"
+        "gm@greengardens-eg.com",
+        "export@greengardens-eg.com",
+        "info@greengardens-eg.com"
       ],
       "websites": [
-        "www.almasa-premium.com",
-        "www.almasadevelopment.com"
+        "www.greengardens-eg.com",
+        "www.greengardens-eg.com"
       ],
       "whatsappNumber": "+201068868780"
     }
@@ -3467,7 +3467,7 @@ var ALMASA_DATA = {
       "branchCairoPhone": "01068868780",
       "branchBeheiraLabel": "Centre des Opérations & Domaines (Beheira)",
       "branchBeheiraAddr": "Gouvernorat de Beheira - Abu El Matameer - Près de l'Hôpital des Fièvres",
-      "branchBeheiraPhone": "01090043999",
+      "branchBeheiraPhone": "01222309944",
       "contactEmailHeading": "Courriers Électroniques Officiels:",
       "contactWebHeading": "Portails Web Officiels:",
       "footerDesc": "Green Gardens Développement — Leader égyptien dans l'exportation agroalimentaire, les cultures sous pivot central moderne, le conditionnement frigorifique de haute technologie et les partenariats internationaux durables.",
@@ -5171,17 +5171,17 @@ var ALMASA_DATA = {
       "branch2": {
         "title": "Pôle Opérationnel & Domaines (Beheira)",
         "address": "Gouvernorat de Beheira - Abu El Matameer - Près de l'Hôpital des Fièvres",
-        "phone": "01090043999",
-        "phoneClean": "+201090043999"
+        "phone": "01222309944",
+        "phoneClean": "+201222309944"
       },
       "emails": [
-        "gm-abdou@almasapremium.com",
-        "ceo-remas@almasapremium.com",
-        "almasa-premium@gmail.com"
+        "gm@greengardens-eg.com",
+        "export@greengardens-eg.com",
+        "info@greengardens-eg.com"
       ],
       "websites": [
-        "www.almasa-premium.com",
-        "www.almasadevelopment.com"
+        "www.greengardens-eg.com",
+        "www.greengardens-eg.com"
       ],
       "whatsappNumber": "+201068868780"
     }

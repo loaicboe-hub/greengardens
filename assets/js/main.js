@@ -200,27 +200,51 @@ async function fetchLiveContent() {
     }
 
     // 2. Fetch live settings (Contact phone, email, whatsapp)
-    const settingsRes = await fetch('/api/settings');
-    const settingsData = await settingsRes.json();
-    if (settingsData.success && settingsData.data) {
-      const s = settingsData.data;
-      if (s.company_phone) {
-        document.querySelectorAll('.company-phone-link').forEach(el => {
-          el.textContent = s.company_phone;
-          el.href = `tel:${s.company_phone.replace(/\s+/g, '')}`;
-        });
+    try {
+      const settingsRes = await fetch('/api/settings');
+      const settingsData = await settingsRes.json();
+      if (settingsData.success && settingsData.data) {
+        const s = settingsData.data;
+        AppState.liveSettings = s;
+        
+        // Update live data in memory
+        for (const l of ['ar', 'en', 'fr', 'ru']) {
+          if (ALMASA_DATA && ALMASA_DATA[l] && ALMASA_DATA[l].contacts) {
+            if (s.company_phone) {
+              ALMASA_DATA[l].contacts.branch2.phone = s.company_phone;
+              ALMASA_DATA[l].contacts.branch2.phoneClean = s.company_phone.replace(/\s+/g, '');
+            }
+            if (s.company_whatsapp) {
+              ALMASA_DATA[l].contacts.whatsappNumber = s.company_whatsapp.replace(/\s+/g, '');
+            }
+            if (s.company_email) {
+              ALMASA_DATA[l].contacts.emails = [s.company_email];
+            }
+          }
+        }
+
+        // Update Floating WhatsApp & Footer WhatsApp
+        if (s.company_whatsapp) {
+          const cleanWa = s.company_whatsapp.replace(/[^0-9]/g, '');
+          const floatWa = document.getElementById('floatingWhatsApp');
+          if (floatWa) floatWa.href = 'https://wa.me/' + cleanWa;
+          document.querySelectorAll('.social-whatsapp, .company-whatsapp-link').forEach(el => {
+            el.href = 'https://wa.me/' + cleanWa;
+          });
+        }
+
+        if (s.company_email) {
+          document.querySelectorAll('.company-email-link').forEach(el => {
+            el.textContent = s.company_email;
+            el.href = 'mailto:' + s.company_email;
+          });
+        }
+
+        // Re-render contacts with live settings
+        renderContacts();
       }
-      if (s.company_whatsapp) {
-        document.querySelectorAll('.company-whatsapp-link').forEach(el => {
-          el.href = `https://wa.me/${s.company_whatsapp.replace(/[^0-9]/g, '')}`;
-        });
-      }
-      if (s.company_email) {
-        document.querySelectorAll('.company-email-link').forEach(el => {
-          el.textContent = s.company_email;
-          el.href = `mailto:${s.company_email}`;
-        });
-      }
+    } catch (e) {
+      console.warn('Could not sync live settings:', e.message);
     }
 
     // 3. Fetch live products from database / API
