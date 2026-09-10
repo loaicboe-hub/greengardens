@@ -542,13 +542,11 @@ function renderStaticTexts() {
 
   // Section Brand Badges
   setElText('badgeAboutText', ui.badgeAbout || ui.brandTitle);
-  setElText('badgeProductsText', ui.badgeProducts || 'ALMASA EXPORT CROPS');
-  setElText('badgeFarmsText', ui.badgeFarms || 'ALMASA FARMS & INVESTMENT');
-  setElText('badgeProcessText', ui.badgeProcess || 'ALMASA QUALITY ASSURANCE');
-  setElText('badgeBoardText', ui.badgeBoard || 'ALMASA EXECUTIVE BOARD');
-  setElText('badgeProjectsText', ui.badgeProjects || 'ALMASA TRACK RECORD');
-  setElText('badgeRfqText', ui.badgeRfq || 'ALMASA EXPORT INQUIRY');
-  setElText('badgeContactText', ui.badgeContact || 'ALMASA CONTACT & BRANCHES');
+  setElText('badgeProductsText', ui.badgeProducts || 'GREEN GARDENS EXPORT CROPS');
+  setElText('badgeFarmsText', ui.badgeFarms || 'GREEN GARDENS FARMS & INVESTMENT');
+  setElText('badgeProcessText', ui.badgeProcess || 'GREEN GARDENS QUALITY ASSURANCE');
+  setElText('badgeRfqText', ui.badgeRfq || 'GREEN GARDENS EXPORT INQUIRY');
+  setElText('badgeContactText', ui.badgeContact || 'GREEN GARDENS CONTACT & BRANCHES');
 
   // Navigation Links
   setElText('navHome', ui.navHome);
