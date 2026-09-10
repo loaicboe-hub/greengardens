@@ -128,7 +128,7 @@ var ALMASA_DATA = {
       "quoteSuccessAlert": "شكراً لتواصلكم مع شركة جرين جاردنز للتطوير. تم تجهيز طلب عرض السعر وسيتم فتح محادثة واتساب المباشرة مع فريق التصدير.",
       "splashVaultTitle": "صندوق كنوز الماسة للتصدير الزراعي والغذائي",
       "splashVaultSub": "انقر لفتح صندوق الألماس واستكشاف بوابات التصدير العالمية",
-      "openChestBtnText": "افتح صندوق الألماس الآن 💎",
+      "openChestBtnText": "استكشف محاصيلنا الفاخرة 🌿",
       "skipSplashText": "تخطي المقدمة ✕"
     },
     "company": {
@@ -1809,7 +1809,7 @@ var ALMASA_DATA = {
       "quoteSuccessAlert": "Thank you for contacting Green Gardens Development. Your quotation request has been prepared and direct WhatsApp chat with our export team is opening.",
       "splashVaultTitle": "Green Gardens Diamond Treasure & Agro-Export Vault",
       "splashVaultSub": "Click to unlock the diamond vault and open the gates to world-class export",
-      "openChestBtnText": "Open Diamond Vault 💎",
+      "openChestBtnText": "Explore Export Harvests 🌿",
       "skipSplashText": "Skip Intro ✕"
     },
     "company": {
@@ -3503,7 +3503,7 @@ var ALMASA_DATA = {
       "quoteSuccessAlert": "Merci d'avoir contacté Green Gardens Développement. Votre demande de cotation a été générée et la discussion WhatsApp avec notre équipe d'exportation s'ouvre.",
       "splashVaultTitle": "Green Gardens Trésor de Diamant & Exportation Agroalimentaire",
       "splashVaultSub": "Une signature égyptienne d'excellence aux standards mondiaux de l'exportation agricole",
-      "openChestBtnText": "Découvrir la Galerie Diamant 💎",
+      "openChestBtnText": "Découvrir la Galerie Export 🌿",
       "skipSplashText": "Passer ✕"
     },
     "company": {
