@@ -4,17 +4,17 @@
 
 :root {
   /* Official Corporate Identity: Imperial Royal Navy & 24K Gold & Crystal Facets */
-  --bg-main: #071426;
-  --bg-secondary: #0b1f3a;
-  --bg-card: rgba(11, 31, 58, 0.85);
-  --bg-card-hover: rgba(16, 44, 82, 0.94);
+  --bg-main: #04170e;
+  --bg-secondary: #082517;
+  --bg-card: rgba(8, 37, 23, 0.84);
+  --bg-card-hover: rgba(12, 51, 32, 0.94);
   --bg-glass: rgba(255, 255, 255, 0.08);
   --bg-glass-light: rgba(255, 255, 255, 0.15);
-  --navy-deep: #050e1b;
-  --navy-dark: #071426;
-  --navy-mid: #0b1f3a;
-  --navy-light: #13335e;
-  --navy-accent: #1e4985;
+  --navy-deep: #020f09;
+  --navy-dark: #04170e;
+  --navy-mid: #082517;
+  --navy-light: #0d3823;
+  --navy-accent: #134e32;
   
   /* 24K Luxury Royal Gold Palette */
   --gold-primary: #d4af37;
@@ -81,11 +81,11 @@ body {
   background-color: var(--bg-main);
   background-image: 
     radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.22) 0%, transparent 55%),
-    radial-gradient(circle at 85% 35%, rgba(19, 51, 94, 0.5) 0%, transparent 60%),
+    radial-gradient(circle at 85% 35%, rgba(14, 60, 37, 0.5) 0%, transparent 60%),
     radial-gradient(circle at 50% 70%, rgba(212, 175, 55, 0.16) 0%, transparent 60%),
-    radial-gradient(circle at 20% 90%, rgba(19, 51, 94, 0.45) 0%, transparent 50%),
+    radial-gradient(circle at 20% 90%, rgba(14, 60, 37, 0.45) 0%, transparent 50%),
     url('../images/crystal-facets.svg'),
-    linear-gradient(180deg, rgba(7, 20, 38, 0.88) 0%, rgba(11, 31, 58, 0.84) 40%, rgba(7, 20, 38, 0.92) 80%, #050e1b 100%),
+    linear-gradient(180deg, rgba(4, 23, 14, 0.88) 0%, rgba(8, 37, 23, 0.84) 40%, rgba(4, 23, 14, 0.92) 80%, #020f09 100%),
     url('../images/fruits-bg.jpg');
   background-size: cover, cover, cover, cover, cover, cover;
   background-position: center top;
@@ -157,7 +157,7 @@ button, input, select, textarea {
   justify-content: center;
   perspective: 1400px;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 45%, #0d274a 0%, #071426 50%, #02060c 100%);
+  background: radial-gradient(circle at 50% 45%, #0a2d1c 0%, #04170e 50%, #02060c 100%);
   transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.75s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -190,7 +190,7 @@ button, input, select, textarea {
   top: 2rem;
   right: 2rem;
   z-index: 30;
-  background: rgba(7, 20, 38, 0.88);
+  background: rgba(4, 23, 14, 0.88);
   border: 1px solid var(--gold-border-bright);
   color: var(--gold-light);
   font-size: 0.9rem;
@@ -211,7 +211,7 @@ button, input, select, textarea {
 
 .splash-skip-btn:hover {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   transform: translateY(-2px);
   box-shadow: 0 6px 25px rgba(251, 191, 36, 0.6);
 }
@@ -409,7 +409,7 @@ button, input, select, textarea {
   text-align: center;
   gap: 0.85rem;
   max-width: 580px;
-  background: rgba(7, 20, 38, 0.92);
+  background: rgba(4, 23, 14, 0.92);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid var(--gold-border-bright);
@@ -480,14 +480,14 @@ button, input, select, textarea {
   height: var(--header-height);
   z-index: 1000;
   transition: var(--transition-smooth);
-  background: rgba(11, 31, 58, 0.94);
+  background: rgba(8, 37, 23, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--gold-border);
 }
 
 .site-header.scrolled {
-  background: rgba(7, 20, 38, 0.94);
+  background: rgba(4, 23, 14, 0.94);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 1px 0 var(--gold-border);
   height: 95px;
 }
@@ -691,7 +691,7 @@ html[lang="ru"] .nav-link {
   right: 50%;
   transform: translateX(50%) translateY(8px);
   min-width: 290px;
-  background: rgba(7, 20, 38, 0.98);
+  background: rgba(4, 23, 14, 0.98);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
   border: 1.5px solid var(--gold-border-bright);
@@ -755,7 +755,7 @@ html[dir="ltr"] .nav-dropdown-wrapper.open .nav-dropdown-menu {
 }
 
 .nav-dropdown-item:hover {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.25) 0%, rgba(19, 51, 94, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.25) 0%, rgba(14, 60, 37, 0.5) 100%);
   border-color: var(--gold-bright);
   transform: translateX(-3px);
   box-shadow: 0 4px 15px rgba(251, 191, 36, 0.35);
@@ -842,7 +842,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   top: calc(100% + 8px);
   right: 0;
   left: auto;
-  background: rgba(5, 14, 27, 0.98);
+  background: rgba(2, 15, 9, 0.98);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
   border: 1.5px solid var(--gold-border-bright);
@@ -898,7 +898,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .lang-option-btn.active {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   box-shadow: 0 2px 10px rgba(251, 191, 36, 0.4);
 }
 
@@ -907,7 +907,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(11, 31, 58, 0.92);
+  background: rgba(8, 37, 23, 0.92);
   border: 1.5px solid var(--gold-border-bright);
   color: #fbbf24;
   padding: 0.38rem clamp(0.55rem, 0.75vw, 0.85rem);
@@ -923,7 +923,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .lang-toggle-btn:hover {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   border-color: transparent;
   transform: translateY(-1px);
   box-shadow: 0 4px 20px rgba(251, 191, 36, 0.6);
@@ -983,7 +983,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   gap: 0.55rem;
   padding: 0.7rem 0.85rem;
   border-radius: 10px;
-  background: rgba(11, 31, 58, 0.9);
+  background: rgba(8, 37, 23, 0.9);
   border: 1px solid rgba(212, 175, 55, 0.3);
   color: #fbbf24;
   font-size: 0.9rem;
@@ -994,7 +994,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .mobile-lang-chip:hover, .mobile-lang-chip.active {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   border-color: #ffffff;
   box-shadow: 0 2px 14px rgba(251, 191, 36, 0.5);
   transform: translateY(-1px);
@@ -1003,7 +1003,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 /* Mobile Hamburger Button */
 .mobile-menu-btn {
   display: none;
-  background: rgba(11, 31, 58, 0.92);
+  background: rgba(8, 37, 23, 0.92);
   border: 1px solid var(--gold-border);
   color: #fbbf24;
   font-size: 1.4rem;
@@ -1040,7 +1040,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .btn-gold {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   box-shadow: 0 4px 18px rgba(251, 191, 36, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -1066,7 +1066,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .btn-outline-gold {
-  background: rgba(11, 31, 58, 0.92);
+  background: rgba(8, 37, 23, 0.92);
   color: var(--gold-light);
   border: 1px solid var(--gold-border-bright);
 }
@@ -1106,7 +1106,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   background-color: #ffffff;
   background-image: 
     radial-gradient(circle at 85% 15%, rgba(212, 175, 55, 0.18) 0%, transparent 50%),
-    radial-gradient(circle at 15% 80%, rgba(11, 31, 58, 0.07) 0%, transparent 55%),
+    radial-gradient(circle at 15% 80%, rgba(8, 37, 23, 0.07) 0%, transparent 55%),
     url('../images/crystal-facets.svg'),
     linear-gradient(180deg, #ffffff 0%, #f8fafc 45%, #f1f5f9 100%);
   background-size: cover, cover, 650px 650px, 100% 100%;
@@ -1147,14 +1147,14 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   align-items: center;
   gap: 0.6rem;
   padding: 0.45rem 1.25rem;
-  background: #071426;
+  background: #04170e;
   border: 1.5px solid var(--gold-primary);
   border-radius: var(--radius-full);
   color: #f5c542;
   font-size: 0.9rem;
   font-weight: 800;
   width: fit-content;
-  box-shadow: 0 4px 20px rgba(7, 20, 38, 0.2), 0 0 15px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 4px 20px rgba(4, 23, 14, 0.2), 0 0 15px rgba(212, 175, 55, 0.3);
 }
 
 .hero-badge-dot {
@@ -1175,7 +1175,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   font-size: clamp(2.2rem, 3.8vw, 3.2rem);
   font-weight: 900;
   line-height: 1.25;
-  color: #071426;
+  color: #04170e;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -1198,7 +1198,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   padding: 1.25rem 1.6rem;
   border-radius: var(--radius-md);
   border: 1.5px solid rgba(212, 175, 55, 0.45);
-  box-shadow: 0 10px 30px rgba(7, 20, 38, 0.08), 0 0 15px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 10px 30px rgba(4, 23, 14, 0.08), 0 0 15px rgba(212, 175, 55, 0.15);
   font-weight: 600;
 }
 
@@ -1234,7 +1234,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   left: 0;
   width: 100%;
   padding: 1.5rem;
-  background: linear-gradient(0deg, rgba(11, 31, 58, 0.95) 0%, rgba(11, 31, 58, 0.94) 60%, transparent 100%);
+  background: linear-gradient(0deg, rgba(8, 37, 23, 0.95) 0%, rgba(8, 37, 23, 0.94) 60%, transparent 100%);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -1260,7 +1260,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
-  background: #071426;
+  background: #04170e;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1.5px solid var(--gold-primary);
@@ -1268,7 +1268,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   padding: 1.75rem 2rem;
   position: relative;
   z-index: 2;
-  box-shadow: 0 20px 45px rgba(7, 20, 38, 0.25), 0 0 30px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 20px 45px rgba(4, 23, 14, 0.25), 0 0 30px rgba(212, 175, 55, 0.2);
 }
 
 .hero-stat-item {
@@ -1627,7 +1627,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .trade-tabs-bar {
   display: inline-flex;
-  background: rgba(7, 20, 38, 0.95);
+  background: rgba(4, 23, 14, 0.95);
   border: 1.5px solid var(--gold-border-bright);
   padding: 6px;
   border-radius: var(--radius-full);
@@ -1668,7 +1668,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .trade-tab-btn.active {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   border-color: #ffffff;
   box-shadow: 0 4px 20px rgba(251, 191, 36, 0.6);
   transform: scale(1.02);
@@ -1686,7 +1686,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .subfilter-btn {
   padding: 0.5rem 1.25rem;
-  background: rgba(11, 31, 58, 0.85);
+  background: rgba(8, 37, 23, 0.85);
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: var(--radius-full);
   color: var(--text-secondary);
@@ -1705,7 +1705,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .subfilter-btn.active {
   background: var(--gold-bright);
-  color: #071426;
+  color: #04170e;
   border-color: #ffffff;
   box-shadow: 0 2px 14px rgba(251, 191, 36, 0.45);
 }
@@ -1772,7 +1772,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: rgba(11, 31, 58, 0.94);
+  background: rgba(8, 37, 23, 0.94);
   backdrop-filter: blur(8px);
   border: 1px solid var(--gold-bright);
   color: var(--gold-light);
@@ -1792,7 +1792,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: rgba(7, 20, 38, 0.9);
+  background: rgba(4, 23, 14, 0.9);
   border: 1px solid var(--gold-border-bright);
   color: #fde047;
   font-size: 0.75rem;
@@ -1837,7 +1837,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   align-items: center;
   gap: 7px;
   padding: 8px 14px 4px 14px;
-  background: rgba(5, 14, 27, 0.75);
+  background: rgba(2, 15, 9, 0.75);
   border-bottom: 1px solid rgba(251, 191, 36, 0.15);
   overflow-x: auto;
   scrollbar-width: none;
@@ -1961,7 +1961,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 .farms-hero-content {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(11, 31, 58, 0.95) 0%, rgba(11, 31, 58, 0.94) 60%, transparent 100%);
+  background: linear-gradient(90deg, rgba(8, 37, 23, 0.95) 0%, rgba(8, 37, 23, 0.94) 60%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1970,7 +1970,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 [dir="rtl"] .farms-hero-content {
-  background: linear-gradient(270deg, rgba(11, 31, 58, 0.95) 0%, rgba(11, 31, 58, 0.94) 60%, transparent 100%);
+  background: linear-gradient(270deg, rgba(8, 37, 23, 0.95) 0%, rgba(8, 37, 23, 0.94) 60%, transparent 100%);
 }
 
 .farms-hero-content h3 {
@@ -2054,7 +2054,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 .farm-badge-area {
   display: inline-block;
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   font-size: 0.9rem;
   font-weight: 800;
   padding: 0.35rem 1rem;
@@ -2130,7 +2130,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .process-step-card {
-  background: linear-gradient(180deg, rgba(11, 31, 58, 0.95) 0%, rgba(7, 20, 38, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(8, 37, 23, 0.95) 0%, rgba(4, 23, 14, 0.98) 100%);
   border: 1px solid var(--gold-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -2144,7 +2144,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .process-step-card:hover {
-  background: linear-gradient(180deg, rgba(16, 44, 82, 0.98) 0%, rgba(10, 28, 54, 1) 100%);
+  background: linear-gradient(180deg, rgba(12, 51, 32, 0.98) 0%, rgba(10, 28, 54, 1) 100%);
   border-color: var(--gold-border-bright);
   transform: translateY(-8px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 25px rgba(251, 191, 36, 0.3);
@@ -2155,7 +2155,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   width: 100%;
   height: 175px;
   overflow: hidden;
-  background: #050e1b;
+  background: #020f09;
 }
 
 .process-card-img {
@@ -2173,7 +2173,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 .process-media-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 20, 38, 0.15) 0%, rgba(7, 20, 38, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(4, 23, 14, 0.15) 0%, rgba(4, 23, 14, 0.8) 100%);
   pointer-events: none;
 }
 
@@ -2186,14 +2186,14 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   height: 42px;
   border-radius: 50%;
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   font-size: 1rem;
   font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 15px rgba(251, 191, 36, 0.6);
-  border: 2.5px solid #071426;
+  border: 2.5px solid #04170e;
   z-index: 2;
   transition: transform 0.3s ease;
 }
@@ -2278,7 +2278,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #0b1f3a;
+  background: #082517;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2399,7 +2399,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 .project-img-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(5, 14, 27, 0.45);
+  background: rgba(2, 15, 9, 0.45);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2412,7 +2412,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .project-zoom-badge {
-  background: rgba(7, 20, 38, 0.9);
+  background: rgba(4, 23, 14, 0.9);
   color: var(--gold-bright);
   font-size: 0.84rem;
   font-weight: 700;
@@ -2483,7 +2483,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   grid-template-columns: 1fr 1.25fr;
   gap: 3rem;
   background: 
-    linear-gradient(135deg, rgba(7, 20, 38, 0.96) 0%, rgba(5, 14, 27, 0.98) 100%),
+    linear-gradient(135deg, rgba(4, 23, 14, 0.96) 0%, rgba(2, 15, 9, 0.98) 100%),
     url('../images/shipping-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -2564,7 +2564,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 }
 
 .form-input, .form-select, .form-textarea {
-  background: rgba(7, 20, 38, 0.88);
+  background: rgba(4, 23, 14, 0.88);
   border: 1px solid rgba(251, 191, 36, 0.3);
   border-radius: var(--radius-sm);
   padding: 0.8rem 1rem;
@@ -2576,7 +2576,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   border-color: var(--gold-bright);
   box-shadow: 0 0 15px rgba(251, 191, 36, 0.35);
-  background: rgba(11, 31, 58, 0.95);
+  background: rgba(8, 37, 23, 0.95);
 }
 
 .form-textarea {
@@ -2622,7 +2622,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   height: 46px;
   border-radius: var(--radius-md);
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2665,9 +2665,9 @@ html[dir="ltr"] .nav-dropdown-item:hover {
    FOOTER
    ========================================================================== */
 .site-footer {
-  background: #050e1b;
+  background: #020f09;
   background-image: 
-    linear-gradient(180deg, rgba(7, 20, 38, 0.7) 0%, rgba(5, 14, 27, 0.98) 100%),
+    linear-gradient(180deg, rgba(4, 23, 14, 0.7) 0%, rgba(2, 15, 9, 0.98) 100%),
     url('../images/skyline-gold.svg');
   background-repeat: repeat-x;
   background-position: bottom center;
@@ -2986,7 +2986,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .scroll-top-btn:hover {
   background: var(--gold-gradient);
-  color: #071426;
+  color: #04170e;
   transform: translateY(-3px);
 }
 
@@ -3084,7 +3084,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(7, 20, 38, 0.82);
+  background: rgba(4, 23, 14, 0.82);
   border: 1px solid var(--gold-border-bright);
   color: var(--gold-light);
   font-size: 1.4rem;
@@ -3100,7 +3100,7 @@ html[dir="ltr"] .nav-dropdown-item:hover {
 
 .modal-gallery-arrow:hover {
   background: var(--gold-primary);
-  color: #071426;
+  color: #04170e;
   border-color: var(--gold-primary);
   transform: translateY(-50%) scale(1.1);
   box-shadow: 0 0 15px rgba(251, 191, 36, 0.6);
@@ -3297,7 +3297,7 @@ html, body {
 
   .site-header {
     height: var(--header-height);
-    background: rgba(7, 20, 38, 0.96) !important;
+    background: rgba(4, 23, 14, 0.96) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--gold-border);
@@ -3433,7 +3433,7 @@ html, body {
     pointer-events: auto !important;
     width: 100% !important;
     max-width: 100% !important;
-    background: rgba(11, 31, 58, 0.6) !important;
+    background: rgba(8, 37, 23, 0.6) !important;
     border: 1px solid rgba(212, 175, 55, 0.2) !important;
     border-radius: 12px;
     padding: 0.5rem;
@@ -3460,7 +3460,7 @@ html, body {
     justify-content: center;
     width: 44px;
     height: 44px;
-    background: rgba(11, 31, 58, 0.85);
+    background: rgba(8, 37, 23, 0.85);
     border: 1.5px solid var(--gold-border);
     border-radius: 10px;
     color: var(--gold-bright);
@@ -3471,7 +3471,7 @@ html, body {
 
   .mobile-menu-btn:hover, .mobile-menu-btn.active {
     background: var(--gold-gradient);
-    color: #071426;
+    color: #04170e;
     border-color: #ffffff;
   }
 
@@ -3537,7 +3537,7 @@ html, body {
     gap: 1rem !important;
     padding: 1.25rem 1rem !important;
     border-radius: 16px !important;
-    background: rgba(11, 31, 58, 0.8) !important;
+    background: rgba(8, 37, 23, 0.8) !important;
     backdrop-filter: blur(16px);
     border: 1px solid var(--gold-border) !important;
     margin-top: 1.5rem;
@@ -3680,7 +3680,7 @@ html, body {
     font-size: 1.35rem !important;
     border-radius: 10px !important;
     flex-shrink: 0 !important;
-    background: rgba(11, 31, 58, 0.95) !important;
+    background: rgba(8, 37, 23, 0.95) !important;
     border: 1.5px solid var(--gold-border-bright) !important;
     box-shadow: 0 0 14px rgba(251, 191, 36, 0.4) !important;
   }
