@@ -211,6 +211,8 @@ async function fetchLiveContent() {
         for (const l of ['ar', 'en', 'fr', 'ru']) {
           if (ALMASA_DATA && ALMASA_DATA[l] && ALMASA_DATA[l].contacts) {
             if (s.company_phone) {
+              ALMASA_DATA[l].contacts.branch1.phone = s.company_phone;
+              ALMASA_DATA[l].contacts.branch1.phoneClean = s.company_phone.replace(/\s+/g, '');
               ALMASA_DATA[l].contacts.branch2.phone = s.company_phone;
               ALMASA_DATA[l].contacts.branch2.phoneClean = s.company_phone.replace(/\s+/g, '');
             }
@@ -294,7 +296,7 @@ async function fetchLiveContent() {
               images: pImages,
               badge: p.tag_ar || 'صادرات ممتازة',
               season: p.season_ar || 'موسمي',
-              origin: 'مصر (مزارع شركة الماسة)',
+              origin: 'مصر (مزارع شركة جرين جاردنز للتطوير)',
               sizes: p.variety_ar || 'أصناف متعددة',
               packaging: p.packaging_ar || 'كرتون تصدير دولي',
               temp: (p.category_id == 4 || p.category_id == 5) ? '-18° مئوية' : '+2° إلى +6° مئوية',
@@ -1133,7 +1135,7 @@ function renderContacts() {
           <a href="tel:${c.branch1.phoneClean}" class="phone-link">${c.branch1.phone}</a>
         </div>
       </div>
-      <a href="https://wa.me/${c.branch1.phoneClean.replace('+','')}" target="_blank" class="btn btn-whatsapp-outline btn-sm" style="margin-top:auto;">
+      <a href="https://wa.me/${c.branch1.phoneClean.replace(/[^0-9]/g, '')}" target="_blank" class="btn btn-whatsapp-outline btn-sm" style="margin-top:auto;">
         <span>${chatLabel}</span>
       </a>
     </div>
@@ -1155,7 +1157,7 @@ function renderContacts() {
           <a href="tel:${c.branch2.phoneClean}" class="phone-link">${c.branch2.phone}</a>
         </div>
       </div>
-      <a href="https://wa.me/${c.branch2.phoneClean.replace('+','')}" target="_blank" class="btn btn-whatsapp-outline btn-sm" style="margin-top:auto;">
+      <a href="https://wa.me/${c.branch2.phoneClean.replace(/[^0-9]/g, '')}" target="_blank" class="btn btn-whatsapp-outline btn-sm" style="margin-top:auto;">
         <span>${chatLabel}</span>
       </a>
     </div>
@@ -1166,12 +1168,12 @@ function renderContacts() {
   if (floatingWa) {
     const waNum = c.whatsappNumber.replace('+', '');
     const waText = isAr 
-      ? 'مرحباً، أود الاستفسار عن تفاصيل وحاصلات التصدير لدى شركة الماسة.' 
+      ? 'مرحباً، أود الاستفسار عن تفاصيل وحاصلات التصدير لدى شركة جرين جاردنز للتطوير.' 
       : (isFr 
-          ? 'Bonjour, je souhaite me renseigner sur les produits d\'exportation agricole et agroalimentaire d\'ALMASA.' 
+          ? 'Bonjour, je souhaite me renseigner sur les produits d\'exportation agricole et agroalimentaire d\'Green Gardens.' 
           : (isRu
-              ? 'Здравствуйте, я хотел бы узнать подробнее об экспортной продукции компании ALMASA.'
-              : 'Hello, I would like to inquire about agricultural export products from ALMASA.'));
+              ? 'Здравствуйте, я хотел бы узнать подробнее об экспортной продукции компании Green Gardens.'
+              : 'Hello, I would like to inquire about agricultural export products from Green Gardens.'));
     floatingWa.href = `https://wa.me/${waNum}?text=${encodeURIComponent(waText)}`;
   }
 }
@@ -1477,7 +1479,7 @@ function initInquiryForm() {
     // Prepare WhatsApp Message in purely active language
     let msg = '';
     if (isAr) {
-      msg = `*طلب عرض سعر تصدير جديد (شركة الماسة للتطوير)*\n\n` +
+      msg = `*طلب عرض سعر تصدير جديد (شركة جرين جاردنز للتطوير)*\n\n` +
         `👤 *الاسم:* ${contactName}\n` +
         `🏢 *الشركة:* ${companyName}\n` +
         `📱 *الهاتف:* ${phone}\n` +
@@ -1487,9 +1489,9 @@ function initInquiryForm() {
         `🚢 *ميناء / بلد الوصول:* ${destination}\n` +
         `📑 *شرط الشحن:* ${incoterm}\n` +
         `📝 *ملاحظات:* ${notes || 'لا يوجد'}\n\n` +
-        `_تم الإرسال عبر البوابة الرسمية لشركة الماسة للتطوير والتصدير._`;
+        `_تم الإرسال عبر البوابة الرسمية لشركة جرين جاردنز للتطوير والتصدير._`;
     } else if (isFr) {
-      msg = `*NOUVELLE DEMANDE DE DEVIS D'EXPORTATION (ALMASA DÉVELOPPEMENT)*\n\n` +
+      msg = `*NOUVELLE DEMANDE DE DEVIS D'EXPORTATION (GREEN GARDENS DÉVELOPPEMENT)*\n\n` +
         `👤 *Nom / Responsable:* ${contactName}\n` +
         `🏢 *Société / Importateur:* ${companyName}\n` +
         `📱 *Téléphone:* ${phone}\n` +
@@ -1499,9 +1501,9 @@ function initInquiryForm() {
         `🚢 *Port / Pays de Destination:* ${destination}\n` +
         `📑 *Incoterm:* ${incoterm}\n` +
         `📝 *Spécifications & Notes:* ${notes || 'Aucune'}\n\n` +
-        `_Envoyé via le portail officiel d'exportation ALMASA Développement._`;
+        `_Envoyé via le portail officiel d'exportation Green Gardens Développement._`;
     } else if (isRu) {
-      msg = `*НОВЫЙ ЗАПРОС НА ЭКСПОРТНУЮ КОТИРОВКУ («АЛЬ-МАСА» ДЛЯ РАЗВИТИЯ)*\n\n` +
+      msg = `*НОВЫЙ ЗАПРОС НА ЭКСПОРТНУЮ КОТИРОВКУ (GREEN GARDENS)*\n\n` +
         `👤 *Контактное лицо:* ${contactName}\n` +
         `🏢 *Компания:* ${companyName}\n` +
         `📱 *Телефон:* ${phone}\n` +
@@ -1511,9 +1513,9 @@ function initInquiryForm() {
         `🚢 *Порт / Страна назначения:* ${destination}\n` +
         `📑 *Условия поставки (Incoterms):* ${incoterm}\n` +
         `📝 *Спецификации & Примечания:* ${notes || 'Нет'}\n\n` +
-        `_Отправлено через официальный портал экспорта компании «Аль-Маса» для развития._`;
+        `_Отправлено через официальный портал экспорта компании «Грин Гарденс» для развития._`;
     } else {
-      msg = `*NEW EXPORT QUOTATION REQUEST (ALMASA DEVELOPMENT)*\n\n` +
+      msg = `*NEW EXPORT QUOTATION REQUEST (GREEN GARDENS DEVELOPMENT)*\n\n` +
         `👤 *Contact Name:* ${contactName}\n` +
         `🏢 *Company:* ${companyName}\n` +
         `📱 *Phone:* ${phone}\n` +
@@ -1523,7 +1525,7 @@ function initInquiryForm() {
         `🚢 *Destination Port / Country:* ${destination}\n` +
         `📑 *Incoterm:* ${incoterm}\n` +
         `📝 *Specifications:* ${notes || 'None'}\n\n` +
-        `_Sent via ALMASA Development Official Export Portal._`;
+        `_Sent via Green Gardens Development Official Export Portal._`;
     }
 
     // Send inquiry to MySQL Backend API

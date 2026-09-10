@@ -1660,13 +1660,13 @@ var ALMASA_DATA = {
       "branch1": {
         "title": "الفرع الرئيسي (الجيزة)",
         "address": "الجيزة - مدينة الشيخ زايد - الكورت يارد",
-        "phone": "01068868780",
-        "phoneClean": "+201068868780"
+        "phone": "+201222309944",
+        "phoneClean": "+201222309944"
       },
       "branch2": {
         "title": "فرع العمليات والمزارع (البحيرة)",
         "address": "محافظة البحيرة - أبو المطامير - بجوار مستشفى الحميات",
-        "phone": "01222309944",
+        "phone": "+201222309944",
         "phoneClean": "+201222309944"
       },
       "emails": [
@@ -1678,7 +1678,7 @@ var ALMASA_DATA = {
         "www.greengardens-eg.com",
         "www.greengardens-eg.com"
       ],
-      "whatsappNumber": "+201068868780"
+      "whatsappNumber": "+201222309944"
     }
   },
   "en": {
@@ -3341,13 +3341,13 @@ var ALMASA_DATA = {
       "branch1": {
         "title": "Headquarters (Giza)",
         "address": "Giza - Sheikh Zayed City - The Courtyard Mall",
-        "phone": "01068868780",
-        "phoneClean": "+201068868780"
+        "phone": "+201222309944",
+        "phoneClean": "+201222309944"
       },
       "branch2": {
         "title": "Operations & Farm Hub (Beheira)",
         "address": "Beheira Governorate - Abu El Matameer - Beside Fevers Hospital",
-        "phone": "01222309944",
+        "phone": "+201222309944",
         "phoneClean": "+201222309944"
       },
       "emails": [
@@ -3359,7 +3359,7 @@ var ALMASA_DATA = {
         "www.greengardens-eg.com",
         "www.greengardens-eg.com"
       ],
-      "whatsappNumber": "+201068868780"
+      "whatsappNumber": "+201222309944"
     }
   },
   "fr": {
@@ -3464,7 +3464,7 @@ var ALMASA_DATA = {
       "contactsDesc": "Nous sommes ravis d'accueillir vos demandes et vos visites à notre siège administratif ou sur nos domaines agricoles et stations de conditionnement.",
       "branchCairoLabel": "Siège Administratif & Commercial (Gizeh)",
       "branchCairoAddr": "Gizeh - Sheikh Zayed - The Courtyard Mall",
-      "branchCairoPhone": "01068868780",
+      "branchCairoPhone": "+201222309944",
       "branchBeheiraLabel": "Centre des Opérations & Domaines (Beheira)",
       "branchBeheiraAddr": "Gouvernorat de Beheira - Abu El Matameer - Près de l'Hôpital des Fièvres",
       "branchBeheiraPhone": "01222309944",
@@ -5165,13 +5165,13 @@ var ALMASA_DATA = {
       "branch1": {
         "title": "Siège Administratif (Gizeh)",
         "address": "Gizeh - Ville de Sheikh Zayed - The Courtyard Mall",
-        "phone": "01068868780",
-        "phoneClean": "+201068868780"
+        "phone": "+201222309944",
+        "phoneClean": "+201222309944"
       },
       "branch2": {
         "title": "Pôle Opérationnel & Domaines (Beheira)",
         "address": "Gouvernorat de Beheira - Abu El Matameer - Près de l'Hôpital des Fièvres",
-        "phone": "01222309944",
+        "phone": "+201222309944",
         "phoneClean": "+201222309944"
       },
       "emails": [
@@ -5183,7 +5183,7 @@ var ALMASA_DATA = {
         "www.greengardens-eg.com",
         "www.greengardens-eg.com"
       ],
-      "whatsappNumber": "+201068868780"
+      "whatsappNumber": "+201222309944"
     }
   },
   "ru": {
@@ -6856,8 +6856,8 @@ var ALMASA_DATA = {
       "branch1": {
         "title": "Главный офис (Гиза)",
         "address": "Гиза — Город Шейх Заид — Торговый центр The Courtyard",
-        "phone": "01068868780",
-        "phoneClean": "+201068868780"
+        "phone": "+201222309944",
+        "phoneClean": "+201222309944"
       },
       "branch2": {
         "title": "Операционный и агроэкспортный центр (Бухейра)",
